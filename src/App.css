@@ -1,0 +1,94 @@
+body {
+	background-color: #181818;
+}
+
+.arrow-next {
+	position: fixed;
+	top: 50%;
+	right: 10px;
+	color: #fff;
+	font-size: 40px;
+	transition: 0.2s all;
+}
+
+.arrow-back {
+	position: fixed;
+	top: 50%;
+	left: 10px;
+	color: #fff;
+	font-size: 40px;
+	transition: 0.2s all;
+}
+
+.arrow-next:hover,
+.arrow-back:hover {
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 5px;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.arrow-back:active,
+.arrow-next:active {
+	transform: scale(0.9);
+	opacity: 0.4;
+}
+
+a {
+	margin: 0;
+}
+
+.text-danger {
+	padding: 2px;
+	border: 1px solid rgb(255, 255, 255);
+	color: #fff;
+}
+
+.tooltip-next {
+	position: fixed;
+	right: -35px; 
+	top: 58%;
+	transform: translateX(-50%);
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 8px; 
+	white-space: nowrap;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	pointer-events: none;
+}
+
+.tooltip-back {
+	position: fixed;
+	left: 50px; 
+	top: 58%;
+	transform: translateX(-50%);
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 8px; 
+	white-space: nowrap;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	pointer-events: none;
+}
+
+.arrow-wrapper:hover .tooltip-next,
+.arrow-wrapper:hover .tooltip-back {
+	pointer-events: auto;
+	opacity: 1;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+	font-size: 2rem;
+	font-family: monospace;
+	font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: monospace;
+  font-weight: bold;
+}
+
